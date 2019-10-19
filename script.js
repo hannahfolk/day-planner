@@ -16,7 +16,7 @@ $(document).ready(function() {
         if (now > i) {
             $("#time-" + i).attr("data-state", "past");
         } // If present, change the data-state of the textarea to "present", thereby making it red
-        else if (now === i) {
+        else if (now == i) {
             $("#time-" + i).attr("data-state", "present");
             console.log(i);
         } // If future, change the data-state of the textarea to "future", thereby making it green
