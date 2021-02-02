@@ -32,7 +32,7 @@ Plan your workday using this day planner. Enter your tasks and press the save bu
 <!-- ABOUT THE PROJECT -->
 ## About The Project
     
-[![Product Name Screen Shot][product-screenshot]]()
+[![Product Name Screen Shot][product-screenshot]](https://hannahfolk.github.io/day-planner/)
     
     
 ### Built With
