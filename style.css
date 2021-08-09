@@ -1,73 +1,72 @@
 .jumbotron {
-    background-color: white;
-    border-bottom: 10px solid black;
-    border-radius: 0;
+  background-color: white;
+  border-bottom: 10px solid black;
+  border-radius: 0;
 }
 
 .container {
-    padding-bottom: 20px;
-    padding: 20px;
+  padding-bottom: 20px;
+  padding: 20px;
 }
 
 textarea {
-    resize: none;
-    overflow: auto;
+  resize: none;
+  overflow: auto;
 }
 
 .time {
-    text-align: right;
-    border-top: 1px dashed black;
-    padding-top: 10px;
-    padding-right: 10px;
+  border-top: 1px dashed black;
+  padding-top: 10px;
+  padding-right: 10px;
 }
 
-#fivePMTime {
-    border-bottom: 1px dashed black;
+.last-hour {
+  border-bottom: 1px dashed black;
 }
 
 .events {
-    padding-left: 0;
+  padding-left: 0;
 }
 
 .form-control {
-    border-radius: 0;
+  border-radius: 0;
 }
 
 .save {
-    display: block;
-    height: 86px;
-    color: white;
-    background-color: #0faecc;
-    border-top-right-radius: 0.75rem;
-    border-bottom-right-radius: 0.75rem;
-    padding: 20px;
+  display: block;
+  height: 86px;
+  color: white;
+  background-color: #0faecc;
+  border-top-right-radius: 0.75rem;
+  border-bottom-right-radius: 0.75rem;
+  padding: 20px;
 }
 
 .save:hover {
-    color: black;
+  color: black;
 }
 
 /* Change the colors of the textareas based on time */
 textarea[data-state="past"] {
-    background-color: #cccccc;
+  background-color: #cccccc;
 }
 
 textarea[data-state="present"] {
-    background-color: #f14b56;
+  background-color: #f14b56;
 }
 
 textarea[data-state="future"] {
-    background-color: #85ee7e;
+  background-color: #85ee7e;
 }
 
 textarea:focus[data-state="past"] {
-    background-color: #cccccc;
+  background-color: #cccccc;
 }
 
 textarea:focus[data-state="present"] {
-    background-color: #f14b56;
+  background-color: #f14b56;
 }
 
 textarea:focus[data-state="future"] {
-    background-color: #85ee7e;
+  background-color: #85ee7e;
 }
