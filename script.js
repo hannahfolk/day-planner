@@ -1,6 +1,7 @@
 $(document).ready(function () {
-  // Grab the date and current hour
-  const date = moment().format("dddd, MMMM Do");
+  // Grab the date, time, and current hour
+  const date = moment().format("dddd, MMMM Do, YYYY");
+  let time = moment().format("h:mm:ss a");
   const now = moment().format("HH");
 
   const container = $(".container");
@@ -16,8 +17,15 @@ $(document).ready(function () {
     "5PM",
   ];
 
-  // Place today's date inside the date paragraph
+  // Place today's date and time inside the respective date and time paragraphs
   $("#currentDay").text(date);
+  $("#currentTime").text(time);
+
+  // Update the time every second
+  setInterval(() => {
+    time = moment().format("h:mm:ss a");
+    $("#currentTime").text(time);
+  }, 1000);
 
   // Create timeblocks
   for (let i = 0; i < hourLabels.length; i++) {
